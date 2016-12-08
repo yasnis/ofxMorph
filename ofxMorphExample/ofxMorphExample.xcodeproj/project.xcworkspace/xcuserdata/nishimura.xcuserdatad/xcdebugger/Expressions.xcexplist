@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ofxMorphImage::getDefaultVerticies():ofxMorphImage.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "ofxMorphImage::setDefaultVerticies(std::__1::vector&lt;ofVec3f, std::__1::allocator&lt;ofVec3f&gt; &gt;*):ofxMorphImage.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
