@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1DFAAF5C95715317E7668BBBE45AFF2AC478AC98",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "14017B46B0BF1A37D91B8DAD524198D69B9000D6" : 0,
+    "1DFAAF5C95715317E7668BBBE45AFF2AC478AC98" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0FA7476A-68B1-4F75-8AE7-0D195AB5FF2F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "14017B46B0BF1A37D91B8DAD524198D69B9000D6" : "ofxDraggableMarker\/",
+    "1DFAAF5C95715317E7668BBBE45AFF2AC478AC98" : "ofxMorph\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ofxMorphExample",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ofxMorphExample\/ofxMorphExample.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yasnis\/ofxDraggableMarker.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "14017B46B0BF1A37D91B8DAD524198D69B9000D6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yasnis\/ofxMorph.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1DFAAF5C95715317E7668BBBE45AFF2AC478AC98"
+    }
+  ]
+}

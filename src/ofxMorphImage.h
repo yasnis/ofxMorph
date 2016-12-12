@@ -26,6 +26,8 @@ public:
     ~ofxMorphImage();
     
     void draw();
+    void draw(ofPoint p, bool useOffset=true);
+    void draw(float x, float y, bool useOffset=true);
     
     void setGeometry(vector<ofVec3f> *verts, vector<ofIndexType> *inds);
     void setVercities(vector<ofVec3f> *verts);

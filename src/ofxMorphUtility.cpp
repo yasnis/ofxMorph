@@ -33,6 +33,8 @@ void ofxMorphUtility::setup(string imagePath){
     delaunay.addPoint(*m2);
     delaunay.addPoint(*m3);
     delaunay.addPoint(*m4);
+    setOffset(offset);
+    cout << offset << endl;
 }
 
 /*
@@ -60,15 +62,30 @@ void ofxMorphUtility::draw() {
     ofxMorphImage::draw();
 }
 void ofxMorphUtility::draw(bool debug) {
-    draw();
+    ofxMorphImage::draw(offset, true);
     if(debug){
-        drawDebug();
+        drawDebug(true);
     }
 }
 
-void ofxMorphUtility::drawDebug(){
+void ofxMorphUtility::drawNoOffset(bool debug) {
+//    ofxMorphImage::draw(offset, false);
+    ofxMorphImage::draw();
+    if(debug){
+        drawDebug(false);
+    }
+}
+
+void ofxMorphUtility::drawDebug(bool useOffset){
     ofNoFill();
-    delaunay.draw();
+    if(useOffset) {
+        ofPushMatrix();
+        ofTranslate(offset);
+        delaunay.draw();
+        ofPopMatrix();
+    }else{
+        delaunay.draw();
+    }
     markers.draw();
 }
 
@@ -98,6 +115,7 @@ void ofxMorphUtility::addMarker(){
 }
 
 void ofxMorphUtility::addMarker(ofxDraggableMarker *marker) {
+    marker->setOffset(offset);
     markers.addMarker(marker);
     delaunay.addPoint(*marker);
 }
@@ -126,4 +144,13 @@ void ofxMorphUtility::loadSetting(ofXml xml){
 
 ofXml ofxMorphUtility::toXml(){
     return ofxMorphImage::toXml();
+}
+
+void ofxMorphUtility::setOffset(ofVec2f v) {
+    offset = v;
+    markers.setOffset(v);
+}
+
+ofVec2f ofxMorphUtility::getOffset() {
+    return offset;
 }

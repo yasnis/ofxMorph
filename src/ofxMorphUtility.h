@@ -21,6 +21,7 @@ class ofxMorphUtility:public ofxMorphImage {
 private:
     ofxDraggableMarkerGroup markers;
     ofxDelaunay delaunay;
+    ofVec2f offset;
 
 public:
     ofxMorphUtility();
@@ -29,7 +30,8 @@ public:
     void update();
     void draw();
     void draw(bool debug);
-    void drawDebug();
+    void drawNoOffset(bool debug);
+    void drawDebug(bool useOffset = true);
     
     void reset();
     
@@ -41,6 +43,9 @@ public:
     
     void loadSetting(ofXml xml);
     ofXml toXml();
+    
+    void setOffset(ofVec2f v);
+    ofVec2f getOffset();
 };
 
 

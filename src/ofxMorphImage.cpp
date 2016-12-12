@@ -31,6 +31,19 @@ void ofxMorphImage::draw() {
     }
 }
 
+void ofxMorphImage::draw(ofPoint p, bool useOffset) {
+    draw(p.x, p.y);
+}
+void ofxMorphImage::draw(float x, float y, bool useOffset) {
+    if(useOffset){
+        ofPushMatrix();
+        ofTranslate(x, y);
+        draw();
+        ofPopMatrix();
+    }else{
+        draw();
+    }
+}
 
 /*
  * 頂点、テクスチャ座標、インデックスを設定する
